@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: devcontainer
+  name: devcontainer
+spec:
+  containers:
+  - image: myregistry.azurecr.io/devcontainer
+    name: devcontainer
+    ports:
+    - containerPort: 8080
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
