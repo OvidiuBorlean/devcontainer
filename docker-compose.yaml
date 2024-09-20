@@ -1,0 +1,10 @@
+version: '3'
+services:
+  vscode:
+    platform: linux/amd64
+    image: devcontainer
+    ports:
+      - "8080:8080"
+      - "2222:22"
+    volumes:
+     - /tmp/devcontainer:/home/${USER}/projects
