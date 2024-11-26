@@ -1,0 +1,6 @@
+{
+  "name": "Multi-service dev container",
+  "dockerComposeFile": "docker-compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspace"
+}
